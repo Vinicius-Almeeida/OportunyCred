@@ -15,17 +15,18 @@ body {
 
 header {
     background: #011C50;
-    position: relative;
-   /* position: fixed; */
+    /* position: relative; */
+    position: fixed;
     align-items: center;
     padding: 10px;
     width: 100%;
     max-height: 80px;
     box-shadow: 0 0 10px 3px gold;
+    z-index: 1000;
 }
 
 .header-container {
-  /*  border: 1px solid black; */
+    /*  border: 1px solid black; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +35,7 @@ header {
 }
 
 .logo-header {
-  /*  border: 1px solid black; */
+    /*  border: 1px solid black; */
 }
 
 .logo-header img {
@@ -42,7 +43,7 @@ header {
 }
 
 .nav-bar {
-  /*  border: 1px solid black; */
+    /*  border: 1px solid black; */
 }
 
 .nav-bar a {
@@ -64,9 +65,9 @@ header {
 }
 
 .banner {
-    padding: 2px 0 0 0;
+    padding: 60px 0 0 0;
     max-width: 1440px;
-    max-height: 450px;
+    max-height: 550px;
     overflow: hidden;
     box-shadow: 0 0 5px 0 #011C50;
 }
@@ -77,24 +78,25 @@ header {
 }
 
 .container-consignado {
+    display: block;
     max-width: 100%;
-    padding: 20px 20px 20px 20px;
+    padding:  0 20px;
     align-items: center;
+    margin: 0 auto auto auto;
 }
 
-.container-consignado h1 {
+.artigo-consignado h1 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: darkblue;
-    margin-top: 2em;
+    margin: 0 auto 3em auto;
 }
 
 .artigo-consignado {
     max-width: 90%;
     display: block;
-    padding: 60px 0 80px 0;
-    border-bottom: 2px solid darkblue;;
-    margin: 5em auto auto auto;
+    padding: 60px 0 60px 0;
+    margin: auto auto auto auto;
 }
 
 .artigo-consignado h2 {
@@ -156,11 +158,74 @@ header {
     margin-top: .5em;
 }
 
+.container-vantagens {
+    display: flex;
+    width: 90%;
+    margin: 2% auto auto 5%;
+    padding: 20px 20px 0 20px;
+    /*   border: 1px solid black; */
+    border-bottom: 2px solid darkblue;
+    border-radius: 40px;
+    background-image: linear-gradient(to right, rgba(0, 0, 139, 1 ), rgba(0, 0, 255, .8 ), rgba(0, 0, 255, .5 ), rgba(0, 0, 255, .3 ),
+    rgba(255, 215, 0, .3 ), rgba(255, 215, 0, .3 ), rgba(255, 215, 0, .3 ),
+    rgba(255, 215, 0, .5 ), rgba(255, 215, 0, .6), rgba(255, 215, 0, .8 ));
+}
+
+.foto-modelo{
+    /*   border: 1px solid black; */
+    width: 40%;
+    display: inline-block;
+    margin: auto auto auto 1em;
+    background: transparent;
+}
+
+.foto-modelo img {
+    width: 100%;
+    filter: drop-shadow(-1px 5px 5px black);
+}
+
+.check {
+    /*   border: 1px solid black; */
+    display: inline-block;
+    width: 50%;
+    margin: auto 0 auto auto;
+    position: initial;
+    background: transparent;
+}
+
+.check li {
+    /*   border: 1px solid black; */
+    position: relative;
+    display: block;
+    padding: 5px;
+    align-items: center;
+    margin: auto auto 1em auto;
+}
+
+.check li p {
+    /*   border: 1px solid black; */
+    color: #000099;
+    font-family: "cursive", sans-serif;
+    font-size: 2.4rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    margin: auto;
+}
+
+.check li img {
+    display: inline-flex;
+    max-width: 50px;
+    align-items: center;
+    margin: auto .5em auto auto;
+    background: transparent;
+}
+
 /* Style the Form */
 
 .formulario {
     display: block;
-    background-color: #6666FF;
+    background-color: rgba(255, 255, 255, 1);
     padding: 40px 0 60px 0;
     max-height: 700px;
 }
@@ -170,9 +235,9 @@ header {
     max-width: 390px;
     padding: 10px;
     border-radius: 90px;
-    margin: auto auto 1.5em auto;
+    margin: auto auto 3em auto;
     box-shadow: 0 0 4px 2px rgba(1, 28, 80, 1);
-    background-color: rgba(0, 191, 255, .4) ;
+    background-color: rgba(255, 255, 255, 1) ;
 }
 /* filter: drop-shadow(0 0 2px black); */
 
@@ -187,6 +252,12 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
     filter: none;
+}
+
+.label-inputs {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #011C50;
 }
 
 [type="text"], [type="email"], textarea {
@@ -225,7 +296,7 @@ form {
     max-width: 400px;
     border-radius: 30px;
     box-shadow: 0 0 6px 3px rgba(1, 28, 80, 1);
-    background-color: rgba(0, 191, 255, .4) ;
+    background-color: rgb(255, 255, 255);
 }
 
 form div {
@@ -241,7 +312,7 @@ form div {
 .radio, .checkbox, .cor p {
     display: block;
     position: relative;
-    font-size: 14px;
+    font-size: 18px;
     font-family: sans-serif;
     font-weight: bold;
     color: #011C50;
@@ -266,11 +337,10 @@ form div {
 
 /* Style the footer */
 footer {
-    margin-top: 25px;
     background-color: #011C50;
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     color: aqua;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 100%;
 }
