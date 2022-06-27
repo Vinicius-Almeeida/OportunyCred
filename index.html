@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 
-
     <title>OportunyCred</title>
+
 </head>
 <body>
 <header>
@@ -26,15 +26,21 @@
         </nav>
     </div>
 </header>
+<!-- Banner foi colocado fora do main para ajustar o background image no css -->
+<section class="secao-banner">
+    <figure class="banner">
+        <img src="Imagens/Banner(1440x600).png" alt="Banner">
+    </figure>
+    <div class="titulo-banner">
+        <h1>Precisando de dinheiro?</h1>
+        <p>Trabalhamos com as melhores margens</p>
+    </div>
+</section>
+<!-- main  -->
 <main class="main-container">
-    <section class="secao-banner">
-        <figure class="banner">
-            <img src="Imagens/Banner(1440x600).png" alt="Banner">
-        </figure>
-    </section>
-    <article class="container-consignado">
+    <article class="container-apresentacao">
 
-        <div class="artigo-consignado">
+        <div class="artigo-apresentacao">
             <h1>Conheça a Oportuny Cred</h1>
             <h2>Sempre em busca das melhores condições</h2>
             <p>
@@ -44,13 +50,13 @@
                 <br><br>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore exercitationem laudantium quas vel. A cum delectus eius eos esse impedit laboriosam neque, officia omnis optio pariatur rerum saepe suscipit vitae!
             </p>
-            <figure class="foto-consignado">
+            <figure class="foto-emprestimo">
                 <img src="Imagens/img-emprestimo.jpg" alt="Imagem de negócios">
             </figure>
         </div>
         <div class="container-vantagens">
-            <figure class="foto-modelo">
-                <img src="Imagens/foto-modelo-transparent(400x400)(2).png" alt="foto modelo">
+            <figure class="foto-aposentados">
+                <img src="Imagens/aposentados.jpg" alt="foto aposentados">
             </figure>
             <ul class="check">
                 <li>
@@ -101,47 +107,46 @@
             </p>
         </div>
     </section>
-    <section class="formulario">
+</main>
+<section class="formulario">
 
-        <div class="div-chamada-form">
-            <h1> Preencha os campos abaixo</h1>
+    <div class="div-chamada-form">
+        <h1> Preencha os campos abaixo</h1>
+    </div>
+
+    <form method="post">
+        <div>
+            <label for="nome" class="label-inputs">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inputs">
+        </div>
+        <div>
+            <label for="sobrenome" class="label-inputs">Sobre nome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" class="inputs">
         </div>
 
-        <form method="post">
-            <div>
-                <label for="nome" class="label-inputs">Nome</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="inputs">
-            </div>
-            <div>
-                <label for="sobrenome" class="label-inputs">Sobre nome</label>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" class="inputs">
-            </div>
+        <div>
+            <label for="cpf" class="label-inputs">CPF</label>
+            <input type="text" name="cps" id="cpf" placeholder="Informe seu CPF" class="inputs">
+        </div>
 
-            <div>
-                <label for="cpf" class="label-inputs">CPF</label>
-                <input type="text" name="cps" id="cpf" placeholder="Informe seu CPF" class="inputs">
-            </div>
+        <div>
+            <label for="email" class="label-inputs">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="inputs">
+        </div>
 
-            <div>
-                <label for="email" class="label-inputs">E-mail</label>
-                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="inputs">
-            </div>
+        <div>
+            <label for="mensagens" class="label-inputs">Mensages</label>
+            <textarea name="mensagens" id="mensagens" rows="5" placeholder="Digite aqui sua mensagem...." class="inputs"></textarea>
+        </div>
 
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</section>
 
-            <div>
-                <label for="mensagens" class="label-inputs">Mensages</label>
-                <textarea name="mensagens" id="mensagens" rows="5" placeholder="Digite aqui sua mensagem...." class="inputs"></textarea>
-            </div>
-
-            <div>
-                <input type="submit">
-            </div>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2022 | Desenvolvido por <em>Vinícius Almeida.</em> </p>
-    </footer>
-</main>
+<footer>
+    <p>&copy; 2022 | Desenvolvido por <em>Vinícius Almeida.</em> </p>
+</footer>
 </body>
 </html>

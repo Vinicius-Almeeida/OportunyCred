@@ -62,22 +62,57 @@ header {
 .main-container {
     width: 100vw;
     height: auto;
+    background-image: url("../Imagens/Background-image-seta-degrade-transparent.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.secao-banner {
+    max-width: 100%;
+    max-height: 600px;
+    /* background-image: url("../Imagens/Banner(1440x600).png"); */
+    position: relative;
+    top: 6em;
+    bottom: 2em;
+    filter: drop-shadow(2px 4px 10px gray)
 }
 
 .banner {
-    padding: 60px 0 0 0;
-    max-width: 1440px;
-    max-height: 550px;
-    overflow: hidden;
-    box-shadow: 0 0 5px 0 #011C50;
+    filter: contrast(30%);
 }
 
-.banner img {
-    max-width: 100%;
-    filter: contrast(50%);
+.titulo-banner {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    align-items: center;
+    margin: -35em auto auto auto;
 }
 
-.container-consignado {
+.titulo-banner h1 {
+    font-size: 7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 61px;
+    text-align: center;
+    color: #011C50;
+    text-shadow: 1px 1px 1px rgba(213, 165, 0, 0.6);
+}
+
+.titulo-banner p {
+    font-size: 3.5rem;
+    font-style: unset;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    color: #011C50;
+    margin-top: .4em;
+    text-shadow: 1px 1px 1px rgba(213, 165, 0, 0.6);
+}
+
+
+.container-apresentacao {
     display: block;
     max-width: 100%;
     padding:  0 20px;
@@ -85,110 +120,82 @@ header {
     margin: 0 auto auto auto;
 }
 
-.artigo-consignado h1 {
+.artigo-apresentacao h1 {
     text-align: center;
     font-size: 3rem;
     color: darkblue;
-    margin: 0 auto 3em auto;
+    margin: 3em auto 3em auto;
+    text-shadow: 1px 1px 2px gold;
 }
 
-.artigo-consignado {
+.artigo-apresentacao {
     max-width: 90%;
     display: block;
     padding: 60px 0 60px 0;
     margin: auto auto auto auto;
+
 }
 
-.artigo-consignado h2 {
+.artigo-apresentacao h2 {
     display: block;
     font-size: 1.8rem;
     margin-bottom: -1.5em;
     color: darkblue;
 }
 
-.artigo-consignado p {
+.artigo-apresentacao p {
     max-width: 40%;
     display: inline-block;
     font-size: 1.5rem;
     margin-top: 4em;
 }
 
-.foto-consignado {
+.foto-emprestimo {
     display: inline-block;
     max-width:50%;
     float: right;
+    border-radius: 10px;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
-.foto-consignado img {
+.foto-emprestimo img {
     max-width: 100%;
-}
-
-.secao-colunas {
-    max-width: 88%;
-    height: 250px;
-    display: flex;
-    margin: 1em auto auto auto;
-    justify-content: space-between;
-}
-
-.coluna-consignado {
-    display: inline-block;
-    max-width: 32%;
-    max-height: 250px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-}
-
-.coluna-consignado img {
-    display: block;
-    margin: auto;
-}
-
-.coluna-consignado h3 {
-    font-size: 1.7rem;
-    color: darkblue;
-}
-
-.coluna-consignado p {
-    font-size: 1.4rem;
-}
-
-.coluna-consignado h3, p {
-    margin-top: .5em;
+    border-radius: 100px 100px 100px 10px;
 }
 
 .container-vantagens {
     display: flex;
-    width: 90%;
-    margin: 2% auto auto 5%;
+    width: 100%;
+    margin: 10% auto auto auto;
     padding: 20px 20px 0 20px;
-    /*   border: 1px solid black; */
-    border-bottom: 2px solid darkblue;
-    border-radius: 40px;
-    background-image: linear-gradient(to right, rgba(0, 0, 139, 1 ), rgba(0, 0, 255, .8 ), rgba(0, 0, 255, .5 ), rgba(0, 0, 255, .3 ),
-    rgba(255, 215, 0, .3 ), rgba(255, 215, 0, .3 ), rgba(255, 215, 0, .3 ),
-    rgba(255, 215, 0, .5 ), rgba(255, 215, 0, .6), rgba(255, 215, 0, .8 ));
+    /*    border: 1px solid black;
+    /*   border-bottom: 2px solid darkblue; */
+    /*   background-image: linear-gradient(to right, rgba(0, 0, 139, 1 ), rgba(0, 0, 255, .8 ), rgba(0, 0, 255, .5 ), rgba(0, 0, 255, .3 ),
+       rgba(255, 215, 0, .3 ), rgba(255, 215, 0, .3 ), rgba(255, 215, 0, .3 ),
+       rgba(255, 215, 0, .5 ), rgba(255, 215, 0, .6), rgba(255, 215, 0, .8 )); */
 }
 
-.foto-modelo{
-    /*   border: 1px solid black; */
-    width: 40%;
+.foto-aposentados {
+    max-width: 40%;
     display: inline-block;
-    margin: auto auto auto 1em;
+    margin: -1.5em auto auto 4em;
     background: transparent;
 }
 
-.foto-modelo img {
+.foto-aposentados img {
     width: 100%;
-    filter: drop-shadow(-1px 5px 5px black);
+    border-radius: 100px 10px 100px 100px ;
+    filter: drop-shadow(2px 2px 10px black);
+    /*  animation: spinner 1s linear infinite;
+      transform: scale(1.1);*/
+
 }
 
 .check {
     /*   border: 1px solid black; */
     display: inline-block;
-    width: 50%;
-    margin: auto 0 auto auto;
+    width: 40%;
+    margin: -1em 0 auto auto;
     position: initial;
     background: transparent;
 }
@@ -199,7 +206,7 @@ header {
     display: block;
     padding: 5px;
     align-items: center;
-    margin: auto auto 1em auto;
+    margin: auto 5em .3em -18em;
 }
 
 .check li p {
@@ -208,6 +215,7 @@ header {
     font-family: "cursive", sans-serif;
     font-size: 2.4rem;
     font-weight: bold;
+    text-shadow: 1px 1px 1px gold;
     display: inline-flex;
     align-items: center;
     margin: auto;
@@ -221,11 +229,67 @@ header {
     background: transparent;
 }
 
+/*
+.check img:hover {
+    transform: scale(1.2);
+}
+*/
+.check img:hover {
+    transition-duration: 2s;
+    animation: spinner 100ms linear ;
+}
+
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+
+.secao-colunas {
+    max-width: 88%;
+    height: 450px;
+    display: flex;
+    margin: 10em auto auto auto;
+    justify-content: space-between;
+}
+
+.coluna-consignado {
+    display: inline-block;
+    background-color: rgba(149, 211, 233, .1);
+    max-width: 25%;
+    max-height: 650px;
+    margin: auto auto auto auto;
+    padding: 20px 20px 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 3px rgba(245, 236, 236, 0.2);
+    filter: drop-shadow(0px 0px 0px black);
+}
+
+.coluna-consignado img {
+    display: block;
+    margin: auto;
+}
+
+.coluna-consignado h3 {
+    font-size: 1.8rem;
+    color: darkblue;
+    text-shadow: 1px 1px 1px gold;
+}
+
+.coluna-consignado p {
+    font-size: 1.4rem;
+}
+
+.coluna-consignado h3, p {
+    margin-top: .5em;
+}
+
+
 /* Style the Form */
 
 .formulario {
     display: block;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(20, 83, 154);
     padding: 40px 0 60px 0;
     max-height: 700px;
 }
@@ -295,7 +359,7 @@ form {
     margin: auto;
     max-width: 400px;
     border-radius: 30px;
-    box-shadow: 0 0 6px 3px rgba(1, 28, 80, 1);
+    box-shadow: 0 0 3px 2px rgba(138, 180, 248, 1);
     background-color: rgb(255, 255, 255);
 }
 
