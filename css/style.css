@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: 'Gantari', sans-serif;
 }
 
 html {
@@ -47,10 +48,12 @@ header {
 }
 
 .nav-bar a {
+    font-family: 'Gantari', sans-serif;
     text-decoration: none;
     color: deepskyblue;
     margin-right: 1.5em;
     font-size: 1.9rem;
+    font-weight: 400;
 }
 
 .nav-bar a:hover {
@@ -65,7 +68,7 @@ header {
     background-image: url("../Imagens/Background-image-seta-degrade-transparent.png");
     background-repeat: no-repeat;
     background-position: top center;
-    background-size: cover;
+    background-size: cover
 }
 
 .secao-banner {
@@ -91,9 +94,10 @@ header {
 }
 
 .titulo-banner h1 {
+    font-family: 'Gantari', sans-serif;
     font-size: 7rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 61px;
     text-align: center;
     color: #011C50;
@@ -117,14 +121,14 @@ header {
     max-width: 100%;
     padding:  0 20px;
     align-items: center;
-    margin: 0 auto auto auto;
+    margin: -3em auto auto auto;
 }
 
 .artigo-apresentacao h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 3.8rem;
     color: darkblue;
-    margin: 3em auto 3em auto;
+    margin: 3em auto 1em auto;
     text-shadow: 1px 1px 2px gold;
 }
 
@@ -136,37 +140,35 @@ header {
 
 }
 
-.artigo-apresentacao h2 {
-    display: block;
-    font-size: 1.8rem;
-    margin-bottom: -1.5em;
-    color: darkblue;
-}
-
 .artigo-apresentacao p {
     max-width: 40%;
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin-top: 4em;
+    text-align: justify;
 }
 
 .foto-emprestimo {
+    /* border: 1px solid black; */
     display: inline-block;
-    max-width:50%;
+    max-width: 50%;
+    height: 380px;
     float: right;
     border-radius: 10px;
     filter: drop-shadow(2px 4px 6px black);
+    margin: 9.5em 3.5em auto auto;
 }
 
 .foto-emprestimo img {
     max-width: 100%;
+    height: 350px;
     border-radius: 100px 100px 100px 10px;
 }
 
 .container-vantagens {
     display: flex;
     width: 100%;
-    margin: 10% auto auto auto;
+    margin: 5em auto auto auto;
     padding: 20px 20px 0 20px;
     /*    border: 1px solid black;
     /*   border-bottom: 2px solid darkblue; */
@@ -178,7 +180,7 @@ header {
 .foto-aposentados {
     max-width: 40%;
     display: inline-block;
-    margin: -1.5em auto auto 4em;
+    margin: -1em auto auto 4em;
     background: transparent;
 }
 
@@ -192,10 +194,10 @@ header {
 }
 
 .check {
-    /*   border: 1px solid black; */
+    /*  border: 1px solid black; */
     display: inline-block;
-    width: 40%;
-    margin: -1em 0 auto auto;
+    width: 50%;
+    margin: -1em 3em auto auto;
     position: initial;
     background: transparent;
 }
@@ -206,15 +208,14 @@ header {
     display: block;
     padding: 5px;
     align-items: center;
-    margin: auto 5em .3em -18em;
+    margin: auto 5em .3em auto;
 }
 
 .check li p {
     /*   border: 1px solid black; */
     color: #000099;
-    font-family: "cursive", sans-serif;
-    font-size: 2.4rem;
-    font-weight: bold;
+    font-size: 2.5rem;
+    font-weight: 750;
     text-shadow: 1px 1px 1px gold;
     display: inline-flex;
     align-items: center;
@@ -261,8 +262,14 @@ header {
     padding: 20px 20px 60px 20px;
     text-align: center;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px 3px rgba(245, 236, 236, 0.2);
+    box-shadow: 1px 1px 1px 2px rgba(24, 24, 24, 0.3);
     filter: drop-shadow(0px 0px 0px black);
+}
+
+.coluna-consignado:hover {
+    transform: scale(1.05);
+    background-color: rgba(149, 211, 233, .3);
+    box-shadow: 1px 1px 1px 2px rgba(24, 24, 24, 0.3);
 }
 
 .coluna-consignado img {
@@ -278,6 +285,7 @@ header {
 
 .coluna-consignado p {
     font-size: 1.4rem;
+    filter:none;
 }
 
 .coluna-consignado h3, p {
@@ -289,28 +297,49 @@ header {
 
 .formulario {
     display: block;
-    background-color: rgb(20, 83, 154);
+    background-color: #011C50;
     padding: 40px 0 60px 0;
     max-height: 700px;
 }
 
 .div-chamada-form {
-    /* border: 2px solid rgba(1, 28, 80, 1); */
-    max-width: 390px;
+    /* border: 2px solid rgba(1, 28, 80, 1);
+    max-width: 390px;*/
     padding: 10px;
     border-radius: 90px;
     margin: auto auto 3em auto;
-    box-shadow: 0 0 4px 2px rgba(1, 28, 80, 1);
-    background-color: rgba(255, 255, 255, 1) ;
+    /*  box-shadow: 0 0 4px 2px rgba(1, 28, 80, 1);
+    background-color: rgba(255, 255, 255, 1) ; */
 }
-/* filter: drop-shadow(0 0 2px black); */
 
+.div-chamada-form h3 {
+    text-align: center;
+    color: goldenrod;
+    font-size: 3rem;
+}
+/* filter: drop-shadow(0 0 2px black);
 
 .div-chamada-form:hover {
     transform: scale(1.1);
     box-shadow: 0 0 0 2px #5F3AA2, 1px 1px 4px 4px rgba(1, 28, 80, .5);
     background-color: rgba(0, 191, 255, .4);
+}*/
+
+
+.logo-form {
+    /*  border: 1px solid black;  */
+    display: inline-block;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 7em 10em auto auto;
+    float: right;
 }
+
+.logo-form img {
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
 
 h1 {
     text-align: center;
@@ -319,27 +348,32 @@ h1 {
 }
 
 .label-inputs {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: #011C50;
+    color: gold;
 }
 
-[type="text"], [type="email"], textarea {
+[type="text"], [type="email"], [type="tel"] {
     margin-top: .4em;
+    margin-bottom: -.5em;
     width: 100%;
     display: block;
     /* border: 2px solid rgba(1, 28, 80, 1); */
     border-radius: 8px;
     padding: 10px;
-    box-shadow: 0 0 4px 2px rgba(1, 28, 80, 1);
-    border: none;
-
+    /*  box-shadow: 0 0 2px 2px deepskyblue; */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid deepskyblue;
+    color: #011C50;
+    font-weight: bold;
 }
 
 [type="text"]:hover, [type="email"]:hover, textarea:hover {
-    filter: drop-shadow(2px 4px 6px black);
-    box-shadow: 0 0 0 2px #5F3AA2;
-    /* border: 2px solid rgba(1, 28, 80, 1); */
+    /* filter: drop-shadow(2px 4px 6px black);
+  /*  box-shadow: 0 0 0 2px #ffffff;
+   border: 2px solid rgba(1, 28, 80, 1); */
 }
 
 input:focus, textarea:focus {
@@ -351,16 +385,18 @@ input:hover, textarea:hover {
     transition: 10ms;
 }
 
-#nome::placeholder, #email::placeholder, #mensagens::placeholder {
-    color: #011C50;
+#nome::placeholder, #email::placeholder, #telefone::placeholder,
+#cpf::placeholder, #sobrenome::placeholder  {
+    color: rgba(1, 28, 80, .4);
+    font-weight: bold;
 }
 
 form {
-    margin: auto;
+    margin: auto auto auto 8em;
     max-width: 400px;
     border-radius: 30px;
-    box-shadow: 0 0 3px 2px rgba(138, 180, 248, 1);
-    background-color: rgb(255, 255, 255);
+    /* box-shadow: 0 0 1px 2px gold; */
+    background-color: transparent;
 }
 
 form div {
@@ -370,7 +406,7 @@ form div {
 }
 
 .inputs {
-    background: transparent;
+    background: white;
 }
 
 .radio, .checkbox, .cor p {
@@ -382,16 +418,13 @@ form div {
     color: #011C50;
 }
 
-[type="radio"], [type="checkbox,"], select {
-    margin-top: .5em;
-}
 
 [type="submit"] {
-    width: 60%;
+    width: 100%;
     height: 35px;
     border: none;
     border-radius: 20px;
-    margin: -1em auto auto 5em;
+    margin: .5em auto auto auto;
     padding: 8px;
     box-shadow: 0 0 6px 2px rgb(4, 227, 227);
     background: #011C50;
